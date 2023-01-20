@@ -3,10 +3,14 @@ html {
   font-family: sans-serif;
 }
 
+/* centered content in body  */
 body {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 80ch;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  /* center horizontal */
+  align-items: center;
   padding: 1rem;
   line-height: 1.5;
 }
@@ -80,4 +84,13 @@ a:focus {
   .hamburger {
     display: none;
   }
+}
+
+.dark body {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
 }
